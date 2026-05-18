@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { storeContext } from "../context/storeContextValue";
+import { Link } from "react-router-dom";
 
 function Dashboard() {
   const { ingredients, setIngredients, recipes, fetchRecipes, loading, error } = useContext(storeContext);
@@ -86,7 +87,7 @@ function Dashboard() {
             ) : recipes.length > 0 ? (
               <div className="grid gap-6 lg:grid-cols-2">
                 {recipes.map((recipe, index) => (
-                  <div key={recipe.id || index} className="rounded-4xl border border-white/10 bg-white/5 p-8 shadow-2xl shadow-slate-950/20">
+                  <div key={recipe.id || index} className="flex flex-col rounded-4xl border border-white/10 bg-white/5 p-8 shadow-2xl shadow-slate-950/20">
                     <div className="flex flex-col gap-6 lg:flex-row lg:items-start">
                       {recipe.image ? (
                         <img
@@ -100,10 +101,20 @@ function Dashboard() {
                         </div>
                       )}
                       <div className="flex-1">
-                        <p className="text-2xl font-semibold text-white">{recipe.title || recipe.name || "Recipe"}</p>
-                        
+                        <p className="text-lg font-semibold text-white line-clamp-2 leading-tight">
+                          {recipe.title || recipe.name || "Recipe"}
+                        </p>
                       </div>
                     </div>
+                    <Link
+                      to={`/recipe/${recipe.id}`}
+                      className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-amber-400 px-6 py-4 text-sm font-bold text-slate-950 shadow-lg shadow-amber-500/40 transition-all duration-300 hover:bg-amber-300 hover:shadow-2xl hover:shadow-amber-500/60 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-offset-2 focus:ring-offset-slate-900"
+                    >
+                      <span>View Recipe</span>
+                      <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
+                    </Link>
                   </div>
                 ))}
               </div>
