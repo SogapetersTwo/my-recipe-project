@@ -4,7 +4,7 @@ function Services() {
   return (
     <main className="bg-slate-950 min-h-screen text-slate-100">
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="rounded-2xl border border-white/6 bg-gradient-to-b from-slate-900/60 to-slate-950/60 p-10 shadow-2xl">
+        <div className="rounded-2xl border border-white/6 bg-linear-to-b from-slate-900/60 to-slate-950/60 p-10 shadow-2xl">
           <div className="space-y-4 max-w-3xl">
             <p className="text-sm uppercase tracking-[0.3em] text-brand-300">Our Services</p>
             <h1 className="text-4xl font-semibold text-white">How MyRecipee Serves You</h1>
@@ -86,7 +86,7 @@ function Services() {
             </div>
           </div>
 
-          <div className="mt-12 rounded-2xl border border-white/6 bg-gradient-to-r from-brand-400/10 to-slate-900/50 p-8 flex flex-col items-start gap-4">
+          <div className="mt-12 rounded-2xl border border-white/6 bg-linear-to-r from-brand-400/10 to-slate-900/50 p-8 flex flex-col items-start gap-4">
             <h3 className="text-lg font-semibold text-white">Ready to try?</h3>
             <p className="text-slate-300">Start by adding ingredients on the home page and explore recipes curated for you.</p>
             <div className="mt-4">
