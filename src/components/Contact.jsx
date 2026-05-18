@@ -47,7 +47,7 @@ function Contact() {
                 <IoCallOutline className="mt-1 h-6 w-6 text-sky-300" />
                 <div>
                   <p className="font-semibold text-white">Phone</p>
-                  <p className="text-slate-400">+234803936825</p>
+                  <p className="text-slate-400">+2348039368825</p>
                 </div>
               </div>
               <div className="flex gap-3 rounded-3xl bg-white/5 p-4">

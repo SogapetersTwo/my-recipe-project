@@ -4,7 +4,7 @@ import { AiOutlineInstagram, AiOutlineTwitter, AiOutlineMail } from 'react-icons
 function Footer() {
   return (
     <footer className="border-t border-slate-700 bg-slate-950 text-slate-300">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1.2fr_1fr_1fr] lg:px-8">
+      <div className="mx-auto grid max-w-7xl gap-8 px-4 py-8 sm:px-6 lg:grid-cols-[1.2fr_1fr_1fr] lg:px-8">
         <div>
           <h2 className="text-xl font-semibold text-white">Recipee</h2>
           <p className="mt-4 max-w-md leading-7 text-slate-400">
@@ -49,7 +49,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-slate-800 bg-slate-950/90 px-4 py-4 text-center text-sm text-slate-500 sm:px-6 lg:px-8">
+      <div className="border-t border-slate-800 bg-slate-950/90 px-4 py-3 text-center text-sm text-slate-500 sm:px-6 lg:px-8">
         <p>© {new Date().getFullYear()} <b>My Recipee App.</b> All rights reserved.</p>
       </div>
     </footer>

@@ -7,13 +7,13 @@ function About() {
         <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div>
             <span className="inline-flex rounded-full bg-amber-400/10 px-4 py-1 text-sm font-semibold text-amber-300">
-              About Recipee
+              About MyRecipee
             </span>
             <h1 className="mt-6 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
               Delicious recipes made simple, fresh, and joyful.
             </h1>
             <p className="mt-5 max-w-2xl text-slate-300 leading-8">
-              Recipee helps you discover meal ideas that fit your lifestyle, whether youre cooking for one or planning a dinner party. Browse quick recipes,
+              Recipee helps you discover meal ideas that fit your lifestyle, whether you&#39;re cooking for one or planning a dinner party. Browse quick recipes,
               seasonal favorites, and kitchen tricks that make every dinner feel special.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -38,7 +38,7 @@ function About() {
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 p-8 shadow-2xl shadow-slate-950/30">
+          <div className="rounded-4xl border border-white/10 bg-linear-to-br from-slate-900 via-slate-950 to-slate-900 p-8 shadow-2xl shadow-slate-950/30">
             <div className="rounded-[1.75rem] bg-slate-800/70 p-8 sm:p-10">
               <div className="rounded-3xl bg-slate-950 p-8 text-slate-300 shadow-inner shadow-slate-950/50">
                 <p className="text-sm uppercase tracking-[0.3em] text-amber-300">Why users love Recipee</p>
