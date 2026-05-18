@@ -5,11 +5,13 @@ import Dashboard from "./components/Dashboard";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Services from "./components/Services"; 
+import ScrollToTop from "./components/ScrollToTop";
 import Recipe from "./components/Recipe";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <NavBar />
       <Routes>
         <Route path="/" element={<Dashboard />}/>

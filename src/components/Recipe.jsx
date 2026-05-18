@@ -48,6 +48,13 @@ function Recipe() {
     loadRecipe();
   }, [id, apiUrl, apiKey]);
 
+  useEffect(() => {
+    if (recipe) {
+      // scroll to top when recipe details are loaded
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [recipe]);
+
   // Utility function to remove HTML tags from the summary text
   function stripHtml(html = "") {
     return html.replace(/<[^>]*>/g, "");
