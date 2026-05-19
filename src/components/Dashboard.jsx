@@ -12,6 +12,7 @@ function Dashboard() {
 
   const handleClear = () => {
     setIngredients("");
+    fetchRecipes("");
   };
 
   return (
