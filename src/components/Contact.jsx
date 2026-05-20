@@ -40,7 +40,7 @@ function Contact() {
                 <IoMailOutline className="mt-1 h-6 w-6 text-amber-300" />
                 <div>
                   <p className="font-semibold text-white">Email</p>
-                  <p className="text-slate-400">hello@myrecipeeapp.com</p>
+                  <p className="text-slate-400">pharmsogapeters@gmail.com</p>
                 </div>
               </div>
               <div className="flex gap-3 rounded-3xl bg-white/5 p-4">
